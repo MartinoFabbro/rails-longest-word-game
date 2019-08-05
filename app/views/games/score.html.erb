@@ -1,0 +1,14 @@
+<h1>Result</h1>
+
+<% if params['answer'] == "" %>
+  <p> Do your parents have normal kids as well?</p>
+<% elsif @score[:message] == "well done" %>
+  <p><%= @score[:message] %> dork, your score is <%= @score[:score] %></p>
+<% else %>
+  <p>You mongo, <strong><%= params['answer'] %></strong> is <%= @score[:message] %> </p>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to "Play again", new_path %>

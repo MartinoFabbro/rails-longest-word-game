@@ -1,0 +1,14 @@
+<ul>
+<% @array.each do |word| %>
+<li> <%= word %> </li>
+<% end %>
+</ul>
+
+<h2 class="nicememe">Write it down</h2>
+
+<form class="form" action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="answer" placeholder="write it">
+  <input type="hidden" name="grid" value="<%= @array.join %>">
+  <input type="submit">
+</form>

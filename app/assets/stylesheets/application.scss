@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$gray: #F4F4F4;
+
+body {
+  background: $gray; // Using this variable
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  li {
+      background-color: #5edfff;
+      width: 50px;
+      height: 50px;
+      margin: 20px;
+      padding: 20px 20px;
+      text-align: center;
+      border-radius: 15px;
+      font-size: 50px;
+
+  }
+}
+
+form {
+  margin:0 auto 0 auto;
+  padding:30px;
+  width:400px;
+  height:auto;
+  overflow:hidden;
+  background:$gray;
+  border-radius:10px;
+}
+
+.nicememe {
+  text-align: center;
+}
+
+form input {
+  margin:15px 0;
+  padding:15px 10px;
+  width:100%;
+  outline:none;
+  border:1px solid #bbb;
+  border-radius:20px;
+  display:inline-block;
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+          box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+
+input[type=submit] {
+  padding:15px 50px;
+  width:auto;
+  background:#1abc9c;
+  border:none;
+  color:white;
+  cursor:pointer;
+  display:inline-block;
+  float:right;
+  clear:right;
+  -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
